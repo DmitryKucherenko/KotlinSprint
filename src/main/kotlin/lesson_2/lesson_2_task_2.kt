@@ -9,8 +9,8 @@ fun main(){
     val commonCost = permanentEmployeesCost + internCount*internSalary
     val averageSalary = commonCost/(employeesCount+internCount)
 
-    println(" permanentEmployeesCost: $permanentEmployeesCost")
-    println(" commonCost: $commonCost")
-    println(" averageSalary: $averageSalary")
+    println("Permanent employees cost:$permanentEmployeesCost")
+    println("Common cost:$commonCost")
+    println("Average salary:$averageSalary")
 
 }
