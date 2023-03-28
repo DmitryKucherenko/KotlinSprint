@@ -12,7 +12,6 @@ fun main() {
     hour = 10
     minute = 55
 
-    println("Boarding time:  ${hour.toTimeString()} : ${minute.toTimeString()}")
+    println("${hour.toTimeString()}:${minute.toTimeString()}")
 }
-
 fun Int.toTimeString() = String.format("%02d", this)
