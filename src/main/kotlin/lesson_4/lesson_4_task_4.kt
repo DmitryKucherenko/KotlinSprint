@@ -1,6 +1,5 @@
 package lesson_4
 
-
 fun main() {
     var dayOfTrain = 5
     var exerciseForArms = dayOfTrain % 2 != 0
