@@ -1,11 +1,12 @@
 package lesson_4
 
 fun main() {
-    var dayOfTrain = 5
-    var exerciseForArms = dayOfTrain % 2 != 0
-    var exerciseForLags = dayOfTrain % 2 == 0
-    var exerciseForBack = dayOfTrain % 2 == 0
-    var exerciseForPress = dayOfTrain % 2 != 0
+    val dayOfTrain = 5
+    val isEvenDayOfTrain = dayOfTrain % 2 == 0
+    val exerciseForArms = !isEvenDayOfTrain
+    val exerciseForLags = isEvenDayOfTrain
+    val exerciseForBack = isEvenDayOfTrain
+    val exerciseForPress = !isEvenDayOfTrain
 
     println(
         """
@@ -15,5 +16,7 @@ fun main() {
            Упражнения для пресса: ${exerciseForPress}
         """.trimIndent()
     )
-
 }
+
+
+
