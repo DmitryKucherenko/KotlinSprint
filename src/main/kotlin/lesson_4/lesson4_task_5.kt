@@ -9,38 +9,34 @@ fun main() {
     var goodWeather = false
 
     println("Does ship have damage? (y/n)")
-    when (readlnOrNull()) {
-        YES -> bodyDamage = true
-        NO -> bodyDamage = false
-        null -> {
+    bodyDamage = when (readlnOrNull()) {
+        YES -> true
+        NO -> false
+        else -> {
             println("please enter correct value 'y' or 'n'")
             exitProcess(0)
         }
     }
     println("How many person in team? ")
-    readlnOrNull()?.let { readValue ->
-        readValue.toIntOrNull()?.let { intValue ->
+    readlnOrNull()?.toIntOrNull()?.let { intValue ->
             teamCount = intValue
-        }
     } ?: {
         println("please enter correct value!")
         exitProcess(0)
     }
 
     println("How mach provision?")
-    readlnOrNull()?.let { readValue ->
-        readValue.toIntOrNull()?.let { intValue ->
+    readlnOrNull()?.toIntOrNull()?.let { intValue ->
             provision = intValue
-        }
     } ?: {
         println("please enter correct value!")
         exitProcess(0)
     }
     println("Are the weather conditions good? (y/n)")
-    when (readlnOrNull()) {
-        YES -> goodWeather = true
-        NO -> goodWeather = false
-        null -> {
+    goodWeather = when (readlnOrNull()) {
+        YES -> true
+        NO -> false
+        else -> {
             println("please enter correct value 'y' or 'n'")
             exitProcess(0)
         }
