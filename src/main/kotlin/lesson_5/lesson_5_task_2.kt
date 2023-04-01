@@ -2,7 +2,7 @@ package lesson_5
 
 fun main() {
     println("Please, enter you birthday:")
-    val yearOfBirthday = readLine()!!.toInt()
+    val yearOfBirthday = readln().toInt()
     val userAge = CURRENT_YEAR - yearOfBirthday
 
     if (userAge >= AGE_OF_MAJORITY) println("Показать экран с ограниченным контентом")
