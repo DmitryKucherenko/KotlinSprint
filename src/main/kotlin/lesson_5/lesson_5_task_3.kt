@@ -19,9 +19,9 @@ fun main() {
         guesNumber1 && !guesNumber2 || guesNumber2 && !guesNumber1 -> println("Вы выиграли утешительный приз!")
         else -> println("Неудача! Крутите барабан!")
     }
+    println("The numbers $WIN_NUMBER_1 and $WIN_NUMBER_2 WINS!")
 
 }
-
 
 
 const val WIN_NUMBER_1 = 100
