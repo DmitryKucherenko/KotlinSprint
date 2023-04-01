@@ -19,7 +19,10 @@ fun main() {
         sumOfNumbers = readlnOrNull()?.toIntOrNull()
     }
 
-    if(sumOfNumbers == number1 + number2) println("Добро пожаовать!") else println("Доступ запрещен.")
-
+    if (sumOfNumbers == number1 + number2) {
+        println("Добро пожаловать!")
+    } else {
+        println("Доступ запрещен.")
+    }
 
 }
