@@ -2,21 +2,16 @@ package lesson_5
 
 fun main() {
     println("Enter login:")
-    val login = readln()
-
-    if (login == registeredLogin) {
+    if (readln() == registeredLogin) {
         println("Enter password:")
-        val password = readln()
-        if (password == registeredPassword) {
+        if (readln() == registeredPassword) {
             println("Welcome!")
         } else {
-            println("Error authorization! Check you password!")
+            println("Error authorization!Check your password!")
         }
-    }else{
+    } else {
         println("You need registration!")
     }
-
-
 }
 
 const val registeredLogin = "Batman"
